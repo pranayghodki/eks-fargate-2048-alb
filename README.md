@@ -77,19 +77,12 @@
 
 
 * **No EC2 node management**
-* 
 * **Serverless Kubernetes**
-* 
 * **Pay only for running pods**
-* 
 * **This command automatically creates:**
-* 
 * **VPC, Subnets**
-* 
 * **Internet \& NAT Gateways**
-* 
 * **IAM roles**
-* 
 * **CloudFormation stacks**
 
 
