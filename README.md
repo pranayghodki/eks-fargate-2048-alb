@@ -1,32 +1,22 @@
-\# AWS EKS Fargate – 2048 Game with ALB Ingress
+\# 🕹️ 2048 Game on AWS EKS (Fargate) with ALB Ingress
 
 
 
-\## 📌 Project Overview
-
-This project demonstrates a \*\*serverless Kubernetes application\*\* deployed on \*\*AWS EKS using Fargate\*\*.
-
-The classic \*\*2048 game\*\* is deployed as a containerized application and exposed publicly using
-
-\*\*AWS Application Load Balancer (ALB) Ingress\*\*.
+!\[2048 Game Live](screenshots/01-game-ui.png)
 
 
 
----
+Deploy the classic \*\*2048 game\*\* on \*\*AWS EKS using Fargate (serverless Kubernetes)\*\*  
+
+and expose it publicly using \*\*AWS Application Load Balancer (ALB) Ingress\*\*
+
+managed by the \*\*AWS Load Balancer Controller\*\*.
 
 
 
-\## 🏗 Architecture
+This repository is intended as a \*\*learning and reference guide\*\* for anyone
 
-\- AWS EKS (Fargate)
-
-\- Kubernetes Deployment, Service \& Ingress
-
-\- AWS Load Balancer Controller
-
-\- IAM OIDC \& IRSA
-
-\- eksctl, kubectl, Helm
+who wants hands-on experience with EKS Fargate and Kubernetes Ingress on AWS.
 
 
 
@@ -34,41 +24,25 @@ The classic \*\*2048 game\*\* is deployed as a containerized application and exp
 
 
 
-\## 🚀 Live Deployment Proof
+\## 📦 Prerequisites
 
 
 
-\### 🔹 Application Live via ALB
-
-!\[2048 Game Live](screenshots/02-game-ui.png)
+Make sure the following tools are installed:
 
 
 
-\### 🔹 Ingress Configuration
+\- \*\*AWS CLI\*\*
 
-!\[Ingress Output](screenshots/01-ingress.png)
+\- \*\*kubectl\*\*
+
+\- \*\*eksctl\*\*
+
+\- \*\*Helm\*\*
 
 
 
----
-
-
-
-\## ⚙️ Tools \& Technologies
-
-\- AWS EKS (Fargate)
-
-\- Kubernetes
-
-\- AWS Load Balancer Controller
-
-\- IAM OIDC (IRSA)
-
-\- eksctl
-
-\- kubectl
-
-\- Helm
+AWS account with sufficient IAM permissions is required.
 
 
 
@@ -76,37 +50,13 @@ The classic \*\*2048 game\*\* is deployed as a containerized application and exp
 
 
 
-\## 🧠 Key Learnings
-
-\- Built a fully serverless Kubernetes setup using AWS Fargate
-
-\- Configured ALB Ingress using AWS Load Balancer Controller
-
-\- Implemented IAM OIDC \& IRSA for secure permissions
-
-\- Deployed and exposed a production-style application
+\## ☁️ Step 1: Configure AWS CLI
 
 
 
----
+```bash
 
-
-
-\## 🧹 Cleanup
-
-AWS infrastructure was deleted after successful deployment to optimize cloud cost.
-
-
-
----
-
-
-
-\## 👨‍💻 Author
-
-\*\*Pranay (Pranu)\*\*  
-
-Aspiring DevOps Engineer
+aws configure
 
 
 
